@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iaaa.demotracking.MainActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/button_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:onClick="iniciarProtocolo"
+        android:text="Iniciar protocolo"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_parar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:onClick="pararProtocolo"
+        android:text="Parar protocolo"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textview_servidor"
+        android:layout_below="@+id/button_parar"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_servidor" />
+
+    <TextView
+        android:id="@+id/textview_operaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_servidor"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_operaciones"
+        android:textColor="#0096fd"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner_operaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview_operaciones"
+        android:entries="@array/operaciones_arrays"
+        android:prompt="@string/operaciones_prompt" />
+
+    <Button
+        android:id="@+id/button_operaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textview_operaciones"
+        android:onClick="executeOperation"
+        android:text="Ejecutar" />
+
+    <TextView
+        android:id="@+id/textview_respuestas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_operaciones"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_respuestas"
+        android:textColor="#0096fd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_respuestas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_respuestas"
+        android:maxLines="500"
+        android:scrollbars="vertical"
+        android:text="" />
+
+
+</RelativeLayout>

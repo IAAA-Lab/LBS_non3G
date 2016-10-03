@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/gsl-android-map-lib-project"/>
+	<classpathentry kind="var" path="M2_REPO/com/geoslab/gsl_android_map_lib/2.6/gsl_android_map_lib-2.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/geoslab/gsl_javaCoordTransform/1.0.0/gsl_javaCoordTransform-1.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/iaaa/iaaa_TileCache_android/1.0.0/iaaa_TileCache_android-1.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/geoslab/gsl_android/1.0.0/gsl_android-1.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mapsforge/mapsforge-map/0.3.0-jar-with-dependencies/mapsforge-map-0.3.0-jar-with-dependencies.jar" sourcepath="/mapsforge/mapsforge-map"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,111 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_key_power_mode_settings"
+        android:title="@string/pref_power_mode_title" >
+        <ListPreference
+            android:defaultValue="@string/pref_powerModeTypes_default"
+            android:dialogTitle="@string/pref_powerModeType"
+            android:entries="@array/pref_powerModeTypes_entries"
+            android:entryValues="@array/pref_powerModeTypes_values"
+            android:key="pref_powerModeType"
+            android:title="@string/pref_powerModeType" />
+        <ListPreference
+            android:defaultValue="@string/pref_powerDataTypeTypes_default"
+            android:dialogTitle="@string/pref_powerDataTypeType"
+            android:entries="@array/pref_powerDataTypeTypes_entries"
+            android:entryValues="@array/pref_powerDataTypeTypes_values"
+            android:key="pref_powerDataTypeType"
+            android:title="@string/pref_powerDataTypeType" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_device_info_settings"
+        android:title="@string/pref_device_info_title" >
+        <EditTextPreference
+            android:defaultValue="1"
+            android:inputType="number"
+            android:key="pref_powerDeviceIdType"
+            android:title="@string/pref_powerDeviceIdType" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:inputType="number"
+            android:key="pref_powerDeviceVersionType"
+            android:title="@string/pref_powerDeviceVersionType" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_sms_config_settings"
+        android:title="@string/pref_smsConfig_title" >
+        <EditTextPreference
+            android:defaultValue="628481666"
+            android:inputType="number"
+            android:key="pref_serverPhoneNumberType"
+            android:title="@string/pref_serverPhoneNumberType" />
+        <EditTextPreference
+            android:defaultValue="628481666"
+            android:inputType="number"
+            android:key="pref_phoneNumberType"
+            android:title="@string/pref_phoneNumberType" />
+        <EditTextPreference
+            android:defaultValue="900"
+            android:inputType="number"
+            android:key="pref_smsPollTimeType"
+            android:title="@string/pref_smsPollTimeType" />
+        <EditTextPreference
+            android:defaultValue="900"
+            android:inputType="number"
+            android:key="pref_smsTransmitPeriodType"
+            android:title="@string/pref_smsTransmitPeriodType" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_http_config_settings"
+        android:title="@string/pref_httpConfig_title" >
+        <EditTextPreference
+            android:defaultValue="localhost"
+            android:key="pref_domainNameType"
+            android:title="@string/pref_domainNameType" />
+        <EditTextPreference
+            android:defaultValue="1"
+            android:inputType="number"
+            android:key="pref_httpTransmitPeriodType"
+            android:title="@string/pref_httpTransmitPeriodType" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_location_config_settings"
+        android:title="@string/pref_locationConfig_title" >
+        <EditTextPreference
+            android:defaultValue="@string/pref_refreshRateType_default"
+            android:key="pref_refreshRateType"
+            android:title="@string/pref_refreshRateType" />
+
+        <ListPreference
+            android:defaultValue="@string/pref_locationModeTypes_default"
+            android:dialogTitle="@string/pref_locationModeType"
+            android:entries="@array/pref_locationModeTypes_entries"
+            android:entryValues="@array/pref_locationModeTypes_values"
+            android:key="pref_locationModeType"
+            android:title="@string/pref_locationModeType" />
+        <ListPreference
+            android:defaultValue="@string/pref_locationSysRefTypes_default"
+            android:dialogTitle="@string/pref_locationSysRefType"
+            android:entries="@array/pref_locationSysRefTypes_entries"
+            android:entryValues="@array/pref_locationSysRefTypes_values"
+            android:key="pref_locationSysRefType"
+            android:title="@string/pref_locationSysRefType" />
+        <ListPreference
+            android:defaultValue="@string/pref_locationDataTypeTypeTypes_default"
+            android:dialogTitle="@string/pref_locationDataTypeType"
+            android:entries="@array/pref_locationDataTypeTypeTypes_entries"
+            android:entryValues="@array/pref_locationDataTypeTypeTypes_values"
+            android:key="pref_locationDataTypeType"
+            android:title="@string/pref_locationDataTypeType" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_sensor_config_settings"
+        android:title="@string/pref_sensorConfig_title" >
+        <EditTextPreference
+            android:defaultValue="@string/pref_sensorRefreshRateType_default"
+            android:key="pref_sensorRefreshRateType"
+            android:title="@string/pref_sensorRefreshRateType" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

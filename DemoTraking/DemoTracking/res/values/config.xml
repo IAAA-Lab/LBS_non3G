@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- First location zoom level -->
+	<string name="config_zoomLevelFirstLocation">4</string>
+
+</resources>

@@ -1,0 +1,709 @@
+{
+	"operations": {
+        "client": {
+            "GetCapabilities": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "GetCapabilities"
+                    },
+                    "v": {
+                        "required": "false",
+                        "default": "<latest_version>"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "GetNodes": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "GetNodes"
+                    },
+                    "stat": {
+                        "required": "false",
+                        "default": "dead,alive,active"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceGetInfo": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceGetInfoReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DevicePing": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DevicePingReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceReset": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceResetReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceGetMode": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceGetModeReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceSetMode": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceSetModeReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "mode": {
+                        "required": "true"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceGetSMSConfig": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceGetSMSConfigReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceSetSMSConfig": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceSetSMSConfigReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "phoneNumber": {
+                        "required": "true"
+                    },
+                    "smsPollTime": {
+                        "required": "true"
+                    },
+                    "smsTransmitPeriod": {
+                        "required": "true"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceGetHTTPConfig": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceGetHTTPConfigReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "DeviceSetHTTPConfig": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "DeviceSetHTTPConfigReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "domainName": {
+                        "required": "true"
+                    },
+                    "httpTransmitPeriod": {
+                        "required": "true"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationGetInfo": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationGetInfoReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationGet": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationGetReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationGetAll": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationGetAllReq"
+                    },
+                    "stat": {
+                        "required": "false",
+                        "default": "dead,alive,active"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationGetSubset": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationGetSubsetReq"
+                    },
+                    "ids": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationSet": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationSetReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "latitude": {
+                        "required": "true"
+                    },
+                    "nsIndicator": {
+                        "required": "false"
+                    },
+                    "longitude": {
+                        "required": "true"
+                    },
+                    "ewIndicator": {
+                        "required": "false"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationGetRefreshRate": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationGetRefreshRateReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "LocationSetRefreshRate": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "LocationSetRefreshRateReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "locationRefreshRate": {
+                        "required": "true"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "PowerGetInfo": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "PowerGetInfoReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            },
+            "PowerGetLevel": {
+                "parameters": {
+                    "CMD": {
+                        "required": "true",
+                        "value": "PowerGetLevelReq"
+                    },
+                    "deviceID": {
+                        "required": "true"
+                    },
+                    "ff": {
+                        "required": "false",
+                        "default": "false"
+                    },
+                    "h": {
+                        "required": "true"
+                    }
+                }
+            }
+        },
+        "node": {
+            "events": {
+                "DeviceError": {
+                    "parameters": {
+                        "EVT": {
+                            "required": "true",
+                            "value": "DeviceErrorEvent"
+                        },
+                        "deviceID": {
+                            "required": "false"
+                        },
+                        "deviceErrorCode": {
+                            "required": "true"
+                        },
+                        "additionalInfo": {
+                            "required": "true"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "DeviceDescription": {
+                    "parameters": {
+                        "EVT": {
+                            "required": "true",
+                            "value": "DeviceDescriptionEvent"
+                        },
+                        "deviceID": {
+                            "required": "false"
+                        },
+                        "deviceVersion": {
+                            "required": "true"
+                        },
+                        "deviceDescription": {
+                            "required": "true"
+                        },
+                        "cloudID": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "Location": {
+                    "parameters": {
+                        "EVT": {
+                            "required": "true",
+                            "value": "LocationEvent"
+                        },
+                        "deviceID": {
+                            "required": "false"
+                        },
+                        "latitude": {
+                            "required": "true"
+                        },
+                        "nsIndicator": {
+                            "required": "false"
+                        },
+                        "longitude": {
+                            "required": "true"
+                        },
+                        "ewIndicator": {
+                            "required": "false"
+                        },
+                        "utcTime": {
+                            "required": "true"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "PowerLow": {
+                    "parameters": {
+                        "EVT": {
+                            "required": "true",
+                            "value": "PowerLowEvent"
+                        },
+                        "deviceID": {
+                            "required": "false"
+                        },
+                        "powerLevel": {
+                            "required": "true"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                }
+            },
+            "responses": {
+                "DeviceACK": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "DeviceACKRes"
+                        },
+                        "commandSource": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "DeviceError": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "DeviceErrorRes"
+                        },
+                        "commandSource": {
+                            "required": "true"
+                        },
+                        "deviceErrorCode": {
+                            "required": "true"
+                        },
+                        "additionalInfo": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "DeviceGetInfo": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "DeviceGetInfoRes"
+                        },
+                        "deviceID": {
+                            "required": "true"
+                        },
+                        "deviceVersion": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "DeviceGetMode": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "DeviceGetModeRes"
+                        },
+                        "mode": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "DeviceGetSMSConfig": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "DeviceSMSConfigRes"
+                        },
+                        "phoneNumber": {
+                            "required": "true"
+                        },
+                        "smsPollTime": {
+                            "required": "true"
+                        },
+                        "smsTransmitPeriod": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "DeviceGetHTTPConfig": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "DeviceHTTPConfigRes"
+                        },
+                        "domainName": {
+                            "required": "true"
+                        },
+                        "httpTransmitPeriod": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "LocationGetInfo": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "LocationInfoRes"
+                        },
+                        "locationMode": {
+                            "required": "true"
+                        },
+                        "locationSysRef": {
+                            "required": "false",
+                            "default": "WGS84"
+                        },
+                        "locationDataType": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "LocationGet": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "LocationRes"
+                        },
+                        "latitude": {
+                            "required": "true"
+                        },
+                        "nsIndicator": {
+                            "required": "false"
+                        },
+                        "longitude": {
+                            "required": "true"
+                        },
+                        "ewIndicator": {
+                            "required": "false"
+                        },
+                        "utcTime": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "LocationGetRefreshRate": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "LocationRefreshRateRes"
+                        },
+                        "locationRefreshRate": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "PowerGetInfo": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "PowerInfoRes"
+                        },
+                        "powerMode": {
+                            "required": "true"
+                        },
+                        "powerDataUnits": {
+                            "required": "false"
+                        },
+                        "powerDataType": {
+                            "required": "false"
+                        },
+                        "powerMinimum": {
+                            "required": "false"
+                        },
+                        "powerMaximum": {
+                            "required": "false"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                },
+                "PowerGetLevel": {
+                    "parameters": {
+                        "CMD": {
+                            "required": "true",
+                            "value": "PowerLevelRes"
+                        },
+                        "powerLevel": {
+                            "required": "true"
+                        },
+                        "s": {
+                            "required": "false"
+                        },
+                        "h": {
+                            "required": "true"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

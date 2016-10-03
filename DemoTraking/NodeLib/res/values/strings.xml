@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppNode</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="stats_title">Estadísticas</string>
+    
+    <string name="pref_power_mode_title">Power settings</string>
+    <string name="pref_powerModeType">Select power mode</string>
+    <string name="pref_powerModeTypes_default">1</string>
+    <string name="pref_powerDataTypeType">Power data type</string>
+    <string name="pref_powerDataTypeTypes_default">UNKNOWN_POWERED</string>
+    
+    <string name="pref_device_info_title">Device info settings</string>
+    <string name="pref_powerDeviceIdType">Device ID</string>
+    <string name="pref_powerDeviceVersionType">Device version</string>
+    
+    <string name="pref_smsConfig_title">SMS config settings</string>
+    <string name="pref_smsPollTimeType">SMS poll time</string>
+    <string name="pref_smsTransmitPeriodType">SMS transmit period</string>
+    <string name="pref_phoneNumberType">Device\'s phone number</string>
+    <string name="pref_serverPhoneNumberType">Servers\' phone number</string>
+    
+    <string name="pref_httpConfig_title">HTTP config settings</string>
+    <string name="pref_domainNameType">HTTP domain name</string>
+    <string name="pref_httpTransmitPeriodType">HTTP transmit period</string>
+    
+    <string name="pref_locationConfig_title">Location config settings</string>
+    <string name="pref_refreshRateType">Location refresh rate (seconds)</string>
+    <string name="pref_locationModeType">Location mode</string>
+    <string name="pref_locationModeTypes_default">DynamicLocation</string>
+    <string name="pref_locationSysRefType">Location reference system</string>
+    <string name="pref_locationSysRefTypes_default">NMEAformat1</string>
+    <string name="pref_locationDataTypeType">Location data type</string>
+    <string name="pref_locationDataTypeTypeTypes_default">UNKNOWN</string>
+    <string name="pref_refreshRateType_default">900</string>
+    
+    <string name="pref_sensorConfig_title">Sensor config settings</string>
+    <string name="pref_sensorRefreshRateType_default">60</string>
+    <string name="pref_sensorRefreshRateType">Sensors refresh rate (seconds)</string>
+    
+    <string name="action_refresh">Refrescar</string>
+    <string name="action_reset">Resetear</string>
+    
+
+
+</resources>

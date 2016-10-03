@@ -1,0 +1,20 @@
+<profiles>
+	<profile>
+    	<id>env-local</id>
+	    <activation>
+      		<property>
+	        	<name>env</name>
+	        	<value>local</value>
+	      	</property>
+    	</activation>
+	    <properties>
+			<deployment.dburl>localhost:5432</deployment.dburl>
+			<deployment.dbname>trackingdb</deployment.dbname>
+			<deployment.dbuser>postgres</deployment.dbuser>
+			<deployment.dbpasswd>postgres</deployment.dbpasswd>
+			<hibernate.dialect>org.hibernate.dialect.PostgreSQLDialect</hibernate.dialect>
+			
+	    </properties>
+	</profile>
+
+</profiles>

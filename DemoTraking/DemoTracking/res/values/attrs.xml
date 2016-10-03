@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="Map">
+		<attr name="mapRouteGeometryStrokeWidth" format="integer" />
+		<attr name="mapRouteGeometryStrokeColor" format="color" />
+		<attr name="mapRouteGeometryStrokeTransparency" format="integer" />
+	</declare-styleable>
+</resources>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Node location history</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+     html, body, #map-canvas {
+        height: 80%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+    
+	<link href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+	<script src="//cdn.datatables.net/plug-ins/28e7751dbec/sorting/date-euro.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	
+    <script type="text/javascript">
+   		// Función que obtiene el valor de un parámetro de la URL
+		function getParameterByName(name) {
+		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		    var regex = new RegExp("[\\?&amp;]" + name + "=([^&amp;#]*)"),
+        		results = regex.exec(location.search);
+    		return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		
+		var nodeID = getParameterByName('nodeID');
+    	var map;
+    	var markers = [];
+    	var pathCoordinates = [];
+    	var path = new google.maps.Polyline({
+			path: pathCoordinates,
+			geodesic: true,
+			strokeColor: '#FF0000',
+			strokeOpacity: 1.0,
+			strokeWeight: 2
+		});
+
+    	
+		function initialize() {
+			var mapOptions = {
+				zoom: 16,
+				center: new google.maps.LatLng(41.683940, -0.888994)
+				//center: new google.maps.LatLng(41.652634, -0.876631),
+				//mapTypeId: google.maps.MapTypeId.SATELLITE
+			};
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+										mapOptions);
+			
+
+
+			
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		
+		$(document).ready(function () {
+			$('#table_history').dataTable({
+				"ajax": {
+            		"url": "http://${deployment.ip}:${deployment.port}/client/",	// OJO la IP
+            		"data": {
+    					"CMD": "LocationHistoryReq",
+    					"deviceID": nodeID,
+    					"h": "AA"
+  					},
+            		"dataSrc": "a",
+            		"cache": true
+        		},
+       			"columns": [
+       				{ "title": "nodeID" , "visible": false},
+		            { "title": "Latitude" },
+		            { "title": "Longitude" },
+		            { "title": "Time" , type: "date-euro" , targets: 0}
+	            ],
+	            "order": [[ 3, "desc" ]],
+	            "fnDrawCallback": function( oSettings ) {
+	            				
+	                //borro los markers
+	                jQuery.each(markers,function( index, value ) {
+	                    value.setMap(null);
+	                });
+	                
+	                //borro la ruta
+	                path.setMap(null);
+	                
+	                //inicializo ruta
+	                pathCoordinates = [];
+
+					
+					var anNodes = $("#table_history tbody tr");
+					 
+					jQuery.each(  anNodes, function( index, value ) {
+	  					// Se crea la ventana que se abre al pulsar el marker
+	  					var rowData =  value;
+	  					if (rowData.cells.length > 1){
+					 		//alert(rowData.cells[0].innerText);
+	  						var infowindow = new google.maps.InfoWindow({
+								content: rowData.cells[2].innerText
+							});
+	  						var marker = new google.maps.Marker({
+								position: new google.maps.LatLng( rowData.cells[0].innerText,  rowData.cells[1].innerText),
+								map: map,
+								title: rowData.cells[2].innerText
+							});
+	  						markers.push(marker);
+							google.maps.event.addListener(marker, 'click', function() {
+				    			infowindow.open(map,marker);
+					  		});
+					  		// Se añade al path
+					  		pathCoordinates.push(new google.maps.LatLng(rowData.cells[0].innerText, rowData.cells[1].innerText));
+	  					}
+					});
+					path = new google.maps.Polyline({
+						path: pathCoordinates,
+						geodesic: true,
+						strokeColor: '#FF0000',
+						strokeOpacity: 1.0,
+						strokeWeight: 2
+					});
+				
+					path.setMap(map);
+	              }
+			});
+			
+
+		});
+	</script>
+	
+</head>
+<body>
+    <table id="table_history" class="stripe hover cell-border"></table>
+    <div id="map-canvas"></div>
+</body>
+</html>

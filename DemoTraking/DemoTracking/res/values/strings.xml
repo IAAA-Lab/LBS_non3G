@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo Tracking</string>
+    <string name="title_simulador">Simulador</string>
+    <string name="title_servidor">Inicio</string>
+    <string name="title_about">Acerca de</string>
+    <string name="action_config">Configuración</string>
+  	<string name="action_stats">Estadísticas</string> 
+  	<string name="action_refresh">Actualizar</string> 
+    <string name="text_servidor">En esta pantalla se puede iniciar y detener la ejecución del protocolo, así como ver las respuestas se generarían al recibir una operación de la lista por parte del servidor.</string>
+    <string name="title_operaciones">Operaciones disponibles</string>
+    <string name="title_respuestas">Respuestas recibidas</string>
+    <string name="operaciones_prompt">Elija una operación...</string>
+
+    <string-array name="operaciones_arrays">
+        <item>DeviceGetInfo</item>
+        <item>DevicePing</item>
+        <item>DeviceReset</item>
+        <item>DeviceGetMode</item>
+        <item>DeviceSetMode</item>
+        <item>DeviceGetSMSConfig</item>
+        <item>DeviceSetSMSConfig</item>
+        <item>DeviceGetHTTPConfig</item>
+        <item>DeviceSetHTTPConfig</item>
+        <item>LocationGetInfo</item>
+        <item>LocationGet</item>
+        <item>LocationSet</item>
+        <item>LocationGetRefreshRate</item>
+        <item>LocationSetRefreshRate</item>
+        <item>PowerGetInfo</item>
+        <item>PowerGetLevel</item>
+    </string-array>
+
+    <string name="title_operaciones_nodo">Operaciones invocadas por el servidor</string>
+    <string name="text_nodo">En esta sección se pueden ver las operaciones que se han invoado al nodo (dispositivo Android)</string>
+    
+    <string name="graficos_prompt">Seleccione una gráfica...</string>
+
+    <string-array name="graficos_arrays">
+        <item>Gráfico presión</item>
+        <item>Gráfico luz</item>
+        <item>Gráfico campo magnético</item>      
+    </string-array>
+    
+
+</resources>

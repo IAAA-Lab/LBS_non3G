@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- ======================================================================================= -->
+	<!-- GENERIC CONSTANTS -->
+	<!-- ======================================================================================= -->
+
+	<string name="constant_wmsclient_mapPropertiesPath">wmsclient/map.properties</string>
+	<string name="constant_wmsclient_wmsPropertiesPath">wmsclient/wms.properties</string>
+
+	<string name="constant_wmsclient_propertyName_initMinX">initMinX</string>
+	<string name="constant_wmsclient_propertyName_initMinY">initMinY</string>
+	<string name="constant_wmsclient_propertyName_initMaxX">initMaxX</string>
+	<string name="constant_wmsclient_propertyName_initMaxY">initMaxY</string>
+	<string name="constant_wmsclient_propertyName_initSRS">initSRS</string>
+	<string name="constant_wmsclient_propertyName_initZoom">initZoom</string>
+	<string name="constant_wmsclient_propertyName_maxMinX">maxMinX</string>
+	<string name="constant_wmsclient_propertyName_maxMinY">maxMinY</string>
+	<string name="constant_wmsclient_propertyName_maxMaxX">maxMaxX</string>
+	<string name="constant_wmsclient_propertyName_maxMaxY">maxMaxY</string>
+
+	<string name="constant_wmsclient_propertyName_mapServerName">mapServerName</string>
+	<string name="constant_wmsclient_propertyName_mapServerTitle">mapServerTitle</string>
+	<string name="constant_wmsclient_propertyName_mapServerVersion">mapServerVersion</string>
+	<string name="constant_wmsclient_propertyName_mapServerServiceType">mapServerServiceType</string>
+	<string name="constant_wmsclient_propertyName_layerName">layerName</string>
+	<string name="constant_wmsclient_propertyName_layerStyleName">layerStyleName</string>
+
+	<string name="constant_wmsclient_propertyName_tileSetMinX">tileSetMinX</string>
+	<string name="constant_wmsclient_propertyName_tileSetMinY">tileSetMinY</string>
+	<string name="constant_wmsclient_propertyName_tileSetMaxX">tileSetMaxX</string>
+	<string name="constant_wmsclient_propertyName_tileSetMaxY">tileSetMaxY</string>
+	<string name="constant_wmsclient_propertyName_tileSetSRS">tileSetSRS</string>
+	<string name="constant_wmsclient_propertyName_tileSetTileWidth">tileSetTileWidth</string>
+	<string name="constant_wmsclient_propertyName_tileSetTileHeight">tileSetTileHeight</string>
+	<string name="constant_wmsclient_propertyName_tileSetFormat">tileSetFormat</string>
+	<string name="constant_wmsclient_propertyName_tileSetResolutions">tileSetResolutions</string>
+
+	<string name="constant_wmsclient_serviceType_WMSC">WMS-C</string>
+
+	<string name="constant_wmsclient_tileLocalCachePath">tileLocalCachePath</string>
+	<string name="constant_wmsclient_tileAccessType">tileAccessType</string>
+
+	<string name="constant_wmsclient_eventFeatureTouched">featuretouched</string>
+	<string name="constant_wmsclient_eventAddOverlayedElement">addoverlayedelement</string>
+	<string name="constant_wmsclient_eventOnBeforeShowMaptip">onbeforeshowmaptip</string>
+	<string name="constant_wmsclient_eventChangeView">viewchanged</string>
+	<string name="constant_wmsclient_eventDataLoaded">dataloaded</string>
+	<string name="constant_wmsclient_eventZoomChangedIn">zoomchangedin</string>
+	<string name="constant_wmsclient_eventZoomChangedOut">zoomchangedout</string>
+
+	<dimen name="zoomButtonsBottomMargin">40dp</dimen>
+	<dimen name="zoomButtonsRightMargin">10dp</dimen>
+	<dimen name="zoomButtonsGapMargin">-1dp</dimen>
+
+	<!-- ======================================================================================= -->
+	<!-- SPECIFIC CONSTANTS -->
+	<!-- ======================================================================================= -->
+
+	<string name="constant_wmsclient_geoJSONStringSelectable">selectable</string>
+	<string name="constant_wmsclient_geoJSONStringId">id</string>
+	<string name="constant_wmsclient_geoJSONStringFeatureType">featureType</string>
+	<string name="constant_wmsclient_geoJSONStringType">type</string>
+	<string name="constant_wmsclient_geoJSONStringTypeGeometry">geometry</string>
+	<string name="constant_wmsclient_geoJSONStringTypePoint">point</string>
+	<string name="constant_wmsclient_geoJSONStringTypeDrugstoreExtended">extended</string>
+	<string name="constant_wmsclient_geoJSONStringTypeDrugstoreDutyGuard">dutyguard</string>
+	<string name="constant_wmsclient_geoJSONStringTypeRouteStart">routestart</string>
+	<string name="constant_wmsclient_geoJSONStringTypeRouteEnd">routeend</string>
+	<string name="constant_wmsclient_geoJSONStringTypeRouteEndExtended">routeendext</string>
+	<string name="constant_wmsclient_geoJSONStringTypeRouteEndDutyGuard">routeenddg</string>
+	<string name="constant_wmsclient_geoJSONStringTypeLocation">location</string>
+
+	<!-- ======================================================================================= -->
+	<!-- CONFIG -->
+	<!-- ======================================================================================= -->
+
+	<!-- Feature selection touch tolerance -->
+	<string name="config_wmsclient_featureSelectionTouchTolerance">45</string>
+
+	<!-- Use Loading control: 1: add the control to the map, 0: do not add the control -->
+	<string name="config_wmsclient_addloadingcontrol">0</string>
+
+	<!-- Add Zoom button: 1: add the zoom buttons to the map, 0: do not add the buttons -->
+	<string name="config_wmsclient_addzoombuttons">1</string>
+	
+	<!-- Max number of points in a route to draw in wmsclient -->
+	<string name="config_wmsclient_route_max_points">100</string>
+
+	<!-- Init map center when no location -->
+	<string name="config_wmsclient_nolocation_center_lon">676562.4994598215</string>
+	<string name="config_wmsclient_nolocation_center_lat">4613526.0020469865</string>
+	<string name="config_wmsclient_nolocation_center_zoom">4</string>
+
+</resources>

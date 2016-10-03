@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_powerModeTypes_entries">
+        <item>Set up mode</item>
+        <item>Extreme low power mode</item>
+        <item>Very low power mode</item>
+        <item>Low power mode</item>
+        <item>Always locate mode</item>
+        <item>Custom mode</item>
+    </string-array>
+    <string-array name="pref_powerModeTypes_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>    
+    
+    <string-array name="pref_powerDataTypeTypes_entries">
+        <item>Unknown</item>
+        <item>Mains (single fase)</item>
+        <item>Mains (3 fase)</item>
+        <item>DC source</item>
+        <item>Emergency mains constantly powered</item>
+        <item>Emergency mains and transfer switch</item>
+    </string-array>
+        <string-array name="pref_powerDataTypeTypes_values">
+        <item>UNKNOWN_POWERED</item>
+        <item>MAINS_1PHASE_POWERED</item>
+        <item>MAINS_3PHASE_POWERED</item>
+        <item>DC_SOURCE_POWERED</item>
+        <item>EMERGENCY_MAINS_POWERED</item>
+        <item>EMERGENCY_MAINS_TRANSFER_SWITCH_POWERED</item>
+    </string-array>
+    
+        
+    <string-array name="pref_locationModeTypes_entries">
+        <item>No location</item>
+        <item>Static location</item>
+        <item>Dynamic location</item>
+    </string-array>
+     <string-array name="pref_locationModeTypes_values">
+        <item>NoLocation</item>
+        <item>StaticLocation</item>
+        <item>DynamicLocation</item>
+    </string-array>
+    
+     
+    <string-array name="pref_locationSysRefTypes_entries">
+        <item>SensorRectangular Components</item>
+        <item>SensorCylindrical Components</item>
+        <item>SensorSpherical Components</item>
+        <item>SensorPlanetary Components</item>
+        <item>NMEA format 1</item>
+    </string-array>
+    <string-array name="pref_locationSysRefTypes_values">
+        <item>SensorRectangularComponents</item>
+        <item>SensorCylindricalComponents</item>
+        <item>SensorSphericalComponents</item>
+        <item>SensorPlanetaryComponents</item>
+        <item>NMEAformat1</item>
+    </string-array>
+    
+    
+    <string-array name="pref_locationDataTypeTypeTypes_entries">
+        <item>Unknown</item>
+        <item>Not yet defined</item>
+    </string-array>
+	<string-array name="pref_locationDataTypeTypeTypes_values">
+        <item>UNKNOWN</item>
+        <item>NotYetDefined</item>
+    </string-array>
+    
+        
+    
+    
+    
+    
+</resources>
